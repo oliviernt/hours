@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Stundenzettel</title>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Stundenzettel</h1>
+    <form action="#">
+        <label>Name: <input type="text" name="name"></label>
+        <label>Datum: <input type="date" name="date" value="2015-01-01"></label>
+    
+        <h2>Eintrag hinzuf&uuml;gen:</h2>
+        <div class="noprint">
+            <label>Arbeitsbeginn: <input type="text" name="from" placeholder="Beispiel: 08:55"> (in hh:mm)</label>
+            <label>Arbeitsende: <input type="text" name="to" placeholder="Beispiel: 18:05"> (in hh:mm)</label>
+            <label>Pausenzeit: <input type="text" name="pause" placeholder="Beispiel: 10"> (in Minuten)</label>
+            <label><input type="submit" value="Hinzuf&uuml;gen"></label>
+        </div>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Datum</th>
+                <th>Beginn</th>
+                <th>Ende</th>
+                <th>Pausen</th>
+                <th>Summe</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script src="js/entry.js"></script>
+    <script src="js/store.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
